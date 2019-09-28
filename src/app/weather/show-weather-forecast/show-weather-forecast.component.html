@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row centered" *ngIf="this.clima">
+    <div class="col" *ngFor="let dia of this.forecast">
+      {{dia.date}}
+      <br>
+      <img class="img-fluid" src="{{dia.day.condition.icon}}" alt="">
+      <br>
+      {{dia.day.maxtemp_c}}°C - <small class="text-muted">{{dia.day.mintemp_c}}°C</small>
+    </div>
+  </div>
+</div>

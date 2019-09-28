@@ -1,0 +1,20 @@
+
+  <div class="d-flex justify-content-center">
+    <select class="custom-select form-control col-sm-4" (change)="updateShowWeather($event.target.value)">
+      <option hidden [value]="" selected>El tiempo en</option>
+      <option *ngFor="let array of arrayCiudades" [value]="array.code">
+        {{ array.name }}
+      </option>
+    </select>
+  </div>
+<br>
+
+<!-- <mat-form-field>
+    <mat-label>Elija la ciudad</mat-label>
+    <mat-select #ciudad="ngModel" [(ngModel)]="ciudadValue" id="ciudad" name="ciudad" class="col-sm-6"
+      (selectionChange)="updateShowWeather(ciudadValue)" ngModel ngDefaultControl required>
+      <mat-option *ngFor="let array of arrayCiudades" [value]="array.code">
+        {{array.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->

@@ -1,0 +1,16 @@
+.clima{
+  display: block;
+  border: 1px solid;
+  background-color: white;
+}
+
+.centered {
+  text-align: center;
+  font-size: 0;
+}
+.centered > div {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px;
+}

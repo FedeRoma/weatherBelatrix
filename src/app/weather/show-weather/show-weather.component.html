@@ -1,0 +1,23 @@
+<div class="row" *ngIf="this.clima">
+  <div class="col-10 offset-1 clima">
+    <div class="row">
+      <div class="col-6 text-center">
+        {{this.clima.location.name}}
+        <br>
+        {{this.clima.location.localtime}}
+        <br>
+        {{this.clima.current.condition.text}}
+        <br>
+        <img class="img-fluid" src="{{this.clima.current.condition.icon}}" alt="">
+        {{this.clima.current.temp_c}}°C
+      </div>
+      <div class="col-6 text-center">
+        <small class="text-muted">Prob. de precipitaciones: {{this.clima.current.precip_in}}%</small>
+        <br>
+        <small class="text-muted">Humedad: {{this.clima.current.humidity}}%</small>
+        <br>
+        <small class="text-muted">Viento: a {{this.clima.current.vis_km}} km/h</small>
+      </div>
+    </div>
+  </div>
+</div>
