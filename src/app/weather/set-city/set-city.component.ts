@@ -15,7 +15,7 @@ export class SetCityComponent implements OnInit {
   }
 
   updateShowWeather (ciudad) {
-    console.log(ciudad);
+    // console.log(ciudad);
     this.nombreCiudad.emit(ciudad);
   }
 

@@ -14,7 +14,7 @@ export class WeatherComponent implements OnInit {
   }
 
   actualizarWeather ($event) {
-    console.log($event);
+    // console.log($event);
     this.nombreCiudad = $event;
   }
 

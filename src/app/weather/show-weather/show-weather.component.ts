@@ -15,7 +15,7 @@ export class ShowWeatherComponent implements OnInit, OnChanges {
   ngOnInit() {}
 
   ngOnChanges(): void {
-    console.log("Cambio la ciudad", this.nombreCiudad);
+    // console.log("Cambio la ciudad", this.nombreCiudad);
     if (this.nombreCiudad) {
       this.obtenerClima();
     }
@@ -29,7 +29,7 @@ export class ShowWeatherComponent implements OnInit, OnChanges {
       this.clima = await this.rest
         .obtenerClimaCiudad(this.nombreCiudad)
         .toPromise();
-      console.log("Data: " + JSON.stringify(this.clima));
+      // console.log("Data: " + JSON.stringify(this.clima));
     } catch (error) {
       // console.log(error);
     }
